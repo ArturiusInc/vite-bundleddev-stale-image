@@ -1,0 +1,12 @@
+{
+  "name": "vite-bundled-dev-stale-asset",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "swap": "node scripts/swap.mjs"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  }
+}

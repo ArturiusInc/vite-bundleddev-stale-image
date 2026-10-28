@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>bundledDev stale asset</title>
+  </head>
+  <body>
+    <p>Run <code>npm run swap</code>, then reload. Every image should switch between red and blue.</p>
+    <figure>
+      <img id="import" width="128" height="128" />
+      <figcaption>import img from './img-import.png' → <code id="import-url"></code></figcaption>
+    </figure>
+    <figure>
+      <img id="new-url" width="128" height="128" />
+      <figcaption>new URL('./img-new-url.png', import.meta.url) → <code id="new-url-url"></code></figcaption>
+    </figure>
+    <figure>
+      <div class="css-bg"></div>
+      <figcaption>CSS background: url('./img-css.png')</figcaption>
+    </figure>
+    <figure>
+      <img src="/img-public.png" width="128" height="128" />
+      <figcaption>public/img-public.png</figcaption>
+    </figure>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
