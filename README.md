@@ -12,6 +12,11 @@ Vite 8.3.5. Works correctly without `bundledDev`.
 ```sh
 npm install
 npm run dev          # open the page: all four images are red
+```
+
+In a second terminal:
+
+```sh
 npm run swap         # overwrites every image in place (same file name) with a blue version
 ```
 
